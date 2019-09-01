@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DateCountPipe } from './date-count.pipe'
+import { BasicHighlightDirective } from './basic-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     AboutComponent,
-    NavbarComponent,  
+    NavbarComponent,
+    DateCountPipe,
+    BasicHighlightDirective,
   ],
   imports: [
     BrowserModule,
