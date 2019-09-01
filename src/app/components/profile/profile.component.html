@@ -1,0 +1,51 @@
+
+<form action="" class="search-form">
+    <div class="form-group">
+<input type="text" class="form-control" placeholder="search git user with username"[(ngModel)]="username"  name="username" (keyup)="findProfile()">
+    </div>
+</form>
+<div *ngIf="profile">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {{profile.name}} <span>({{profile.login}})</span>
+        <span *ngIf="profile.company"> works at {{profile.company}}</span>
+        <span *ngIf="profile.location">place</span>{{profile.location}}
+      </div>
+    </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <img src="{{profile.avatar_url}}" style="border-radius: 50%" alt="Profile Image">
+          </div>
+             <div style="top:110px"  class="col-sm-3">
+                <ul  class="list-group">
+                 
+                 <li class="list-group items"*ngIf="profile.bio" ><strong>Bio:{{profile.bio}}</strong></li>
+              
+                 <li class="list-group items"*ngIf="profile.blog"><a href="{{profile.blog}." target="_blank"><strong>Email:{{profile.blog}}</strong></a></li>
+                 <li class="list-group items"*ngIf="profile.hireable"><strong> Hireable status:To be hired .</strong></li>
+                 
+               </ul>
+               </div>
+               <div  class="col-sm-4">
+                 <div>
+                   <p>
+                        <span class="label label-default">{{profile.followers}}followers </span>
+                        <span class="label label-default">{{profile.following}}following </span>
+                     <span class="label label-default">{{profile.public_repos}}repos </span>
+                   </p>
+                   <p class="clearfix"><a href="{{profile.html_url}}" target="" class="btn btn-success btn-sm">view profile on github</a></p>
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
+                           <h3 class="panel-title">repository</h3>
+                       </div>
+                       <div class="panel-body" *ngFor="let repo of repos">
+                           <p> {{repo.name}}<a href="{{repo.html_url}}" target="" class="btn btn-sm btn-warning pull-right">view this project on GitHub</a> </p>
+                           <!--<p>{{repo.description}}</p>-->
+                       </div>
+                   </div>
+                 </div>
+               </div>
+        </div>
+      </div>
+    </div>
