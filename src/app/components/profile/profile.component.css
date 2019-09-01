@@ -4,3 +4,10 @@ body{
 .search-form{
   padding-top: 50px;  
 }
+#login{
+  background-color: rgb(41, 151, 41);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
