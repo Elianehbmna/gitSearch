@@ -9,15 +9,15 @@
       <div class="panel-heading">
         {{profile.name}} <span>{{profile.login}}</span>
         
-        <span *ngIf="profile.location"> place</span>{{profile.location}}
+        <span *ngIf="profile.location"> place:{{profile.location}}</span>
       </div>
     </div>
       <div class="panel-body">
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-md-6">
             <img src="{{profile.avatar_url}}" style="border-radius: 50%" alt="Profile Image">
           </div>
-             <div style="top:110px"  class="col-sm-3">
+             <div style="top:110px"  class="col-md-6">
                 <ul  class="list-group">
                  
                  <li class="list-group items"*ngIf="profile.bio" ><strong>Bio:{{profile.bio}}</strong></li>
@@ -27,7 +27,9 @@
                  
                </ul>
                </div>
-               <div  class="col-sm-4">
+              </div>
+              <div class="row">
+               <div  class="col-md-12">
                  <div>
                    <p>
                         <span class="label label-default">{{profile.followers}}followers </span>
@@ -46,6 +48,6 @@
                    </div>
                  </div>
                </div>
-        </div>
+              </div>
       </div>
     </div>
