@@ -12,7 +12,6 @@
        
       </div>
     </div>
-    <br>
       <div class="panel-body">
         <div class="row">
           <div class="col-md-6">
@@ -32,7 +31,7 @@
               <div class="row">
                <div  class="col-md-12">
                  <div>
-                   <p>
+                   <p class="repos">
                         <span class="label label-default" id="followers">{{profile.followers}}followers </span>
                         <span class="label label-default" id="following">{{profile.following}}following </span>
                      <span class="label label-default" id="repos">{{profile.public_repos}}repos </span>
@@ -46,7 +45,7 @@
                        <div class="panel-body" *ngFor="let repo of repos">
                           <div class="jumbotron">
                            <p> {{repo.name}} </p>
-                           <a href="{{repo.html_url}}" target="" class="btn btn-sm btn-warning pull-right">view this project on GitHub</a>
+                           <a href="{{repo.html_url}}" target="" class="btn btn-outline-dark">view this project on GitHub</a>
                            <!--<p>{{repo.description}}</p>-->
                        </div>
                        </div>

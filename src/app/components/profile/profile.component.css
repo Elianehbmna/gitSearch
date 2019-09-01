@@ -10,4 +10,26 @@ body{
   color: white;
   font-size: 20px;
   margin-bottom: 12px;
+  background-size: 50% ;
+  width: 500px;
+  border-radius: 15px;
+ 
+}
+#followers{
+background-color: black;
+color: white;
+border-radius: 5px;
+}
+#following{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
+#repos{
+  background-color: rgb(41, 151, 41);
+  color: white;
+  border-radius: 5px;
+}
+.repos{
+  margin-top: 12px;
 }
