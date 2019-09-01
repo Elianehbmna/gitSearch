@@ -7,8 +7,7 @@ import {ProfileService} from './services/profile.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { AboutComponent } from './about/about.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { DateCountPipe } from './date-count.pipe'
 import { BasicHighlightDirective } from './basic-highlight.directive';
 
@@ -16,13 +15,13 @@ import { BasicHighlightDirective } from './basic-highlight.directive';
   declarations: [
     AppComponent,
     ProfileComponent,
-    AboutComponent,
-    NavbarComponent,
+    
     DateCountPipe,
     BasicHighlightDirective,
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
     HttpClientModule,
     FormsModule
