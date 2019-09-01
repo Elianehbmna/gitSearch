@@ -22,11 +22,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     BasicHighlightDirective,
     AboutComponent,
     NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
     
-    AppRoutingModule,
+AppRoutingModule,
     HttpClientModule,
     FormsModule
   ],
