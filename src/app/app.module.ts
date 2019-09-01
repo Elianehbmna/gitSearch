@@ -10,6 +10,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 import { DateCountPipe } from './date-count.pipe'
 import { BasicHighlightDirective } from './basic-highlight.directive';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BasicHighlightDirective } from './basic-highlight.directive';
     
     DateCountPipe,
     BasicHighlightDirective,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
