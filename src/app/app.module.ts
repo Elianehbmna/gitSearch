@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { DateCountPipe } from './date-count.pipe'
 import { BasicHighlightDirective } from './basic-highlight.directive';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
     DateCountPipe,
     BasicHighlightDirective,
     AboutComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
