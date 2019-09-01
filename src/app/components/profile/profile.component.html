@@ -7,9 +7,9 @@
 <div *ngIf="profile">
     <div class="panel panel-default">
       <div class="panel-heading">
-        {{profile.name}} <span>({{profile.login}})</span>
-        <span *ngIf="profile.company"> works at {{profile.company}}</span>
-        <span *ngIf="profile.location">place</span>{{profile.location}}
+        {{profile.name}} <span>{{profile.login}}</span>
+        
+        <span *ngIf="profile.location"> place</span>{{profile.location}}
       </div>
     </div>
       <div class="panel-body">
