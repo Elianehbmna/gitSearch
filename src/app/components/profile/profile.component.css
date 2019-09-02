@@ -33,3 +33,6 @@ border-radius: 1px;
 .repos{
   margin-top: 12px;
 }
+.ridge{
+  border-style: ridge;
+}
