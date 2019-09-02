@@ -44,7 +44,7 @@
                        
                        <div class="panel-body" *ngFor="let repo of repos">
                           <div class="jumbotron">
-                           <p> {{repo.name}} </p>
+                              <p> {{repo.name}} </p>
                            <cite>(created at {{repo.created_at | date}} )</cite>
 								          <p>{{repo.description}}</p>
                            <a href="{{repo.html_url}}" target="" class="btn btn-outline-dark">view this project on GitHub</a>
@@ -57,3 +57,10 @@
               </div>
       </div>
     </div>
+  
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+          <div class="container text-center">
+            <small>Copyright &copy; Hub Finder</small>
+          </div>
+        </footer>
+      
