@@ -1,4 +1,3 @@
-
 <form action="" class="search-form">
     <div class="form-group">
 <input type="text" class="form-control" placeholder="search git user with username"[(ngModel)]="username"  name="username" (keyup)="findProfile()">
@@ -8,8 +7,6 @@
     <div class="panel panel-default">
       <div class="panel-heading" id="login">
          <span appBasicHighlight>{{profile.name}} {{profile.login}}</span>
-        
-       
       </div>
     </div>
       <div class="panel-body">
@@ -20,13 +17,10 @@
           </div>
              <div style="top:110px"  class="col-md-6">
                 <ul  class="list-group">
-                 
-                 <li class="list-group items"*ngIf="profile.bio" ><strong>Bio:{{profile.bio}}</strong></li>
-              
-                 <li class="list-group items"*ngIf="profile.location"><strong>place:{{profile.location}}</strong></li>
+                <li class="list-group items"*ngIf="profile.bio" ><strong>Bio:{{profile.bio}}</strong></li>
+                <li class="list-group items"*ngIf="profile.location"><strong>place:{{profile.location}}</strong></li>
                  <li class="list-group items"*ngIf="profile.hireable"><strong> Hireable status:To be hired .</strong></li>
-                 
-               </ul>
+              </ul>
                </div>
               </div>
             </div>
@@ -51,7 +45,7 @@
                            <cite>(created at {{repo.created_at | date}} )</cite>
 								          <p>{{repo.description}}</p>
                            <a href="{{repo.html_url}}" target="" class="btn btn-outline-dark">view this project on GitHub</a>
-                           <!--<p>{{repo.description}}</p>-->
+                           
                        </div>
                        </div>
                    </div>
