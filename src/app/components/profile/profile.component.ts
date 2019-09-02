@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProfileService} from '../../services/profile.service';
-
+import{Repos} from '../../repos'
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -8,7 +8,7 @@ import {ProfileService} from '../../services/profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  
+  repo:Repos;
   profile:any;
   repos:any;
  
